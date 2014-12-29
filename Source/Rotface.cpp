@@ -40,7 +40,7 @@ void Rotface::precompute_rotluts() {
 		scales[s] = MINFACESIZE * std::pow(SCALEFACTOR, s);
 	}
 
-//#pragma omp parallel for
+#pragma omp parallel for
 	for (int t = 0; t < NROTS; ++t){
 
 		// -30deg + t * (60deg / rotations)
@@ -106,7 +106,7 @@ void Rotface::find_rotated_objects(unsigned char pixels[],
 		int nrows, int ncols, int ldim, float stridefactor,
 		float smax, float qcutoff) {
 
-//#pragma omp parallel for
+#pragma omp parallel for
 	for (int t = 0; t < NROTS; ++t){
 
 		for(int scale = 0; scale < NUM_SCALES; scale++) {
