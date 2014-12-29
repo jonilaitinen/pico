@@ -1,0 +1,16 @@
+#define NROTS 4
+#define MAXNDETECTIONS 2048
+#define DETECTIONS_PER_ROTATION MAXNDETECTIONS / NROTS
+#define CLUSTER_DETECTIONS 1
+
+#define FACE_RATIO 1.0f		// height to width ratio
+#define MINFACESIZE 100.0f
+
+#define STRIDE_FACTOR 0.1f
+
+// calculating amount of scales:
+// minsize * scalefactor^x = maxsize
+// x = ln(maxsize/minsize) / ln(scalefactor)
+// amount of scales is 0...x
+#define NUM_SCALES 9
+#define SCALEFACTOR 1.2f
