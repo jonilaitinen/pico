@@ -1,0 +1,470 @@
+
+
+float calculateScore(int r, int c, int s, int rotind, unsigned char pixels[], int ldim) {
+
+	// depth 1
+	// node 0.
+
+	if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+		// depth 2t
+		// node 1.
+		if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+			// depth 3t
+			// node 3.
+			if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+				// depth 4t
+				// node 7.
+				if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+					// depth 5t
+					// node 15.
+					if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+						// depth 6t
+						// node 31.
+						if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+							// depth 7t
+							return node31.score1;
+						} else {
+							// depth 7
+							return node31.score2;
+						}
+
+					} else {
+						// depth 6
+						// node 32.
+						if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+							// depth 7
+							return node32.score1;
+						} else {
+							// depth 7
+							return node32.score2;
+						}
+					}
+
+				} else {
+					// depth 5
+					// node 16.
+					if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+						// depth 6
+						// node 33.
+						if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+							// depth 7
+							return node33.score1;
+						} else {
+							// depth 7
+							return node33.score2;
+						}
+
+					} else {
+						// depth 6
+						// node 34.
+						if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+							// depth 7
+							return node34.score1;
+						} else {
+							// depth 7
+							return node34.score2;
+						}
+					}
+
+				}
+
+			} else {
+				// depth 4
+				// node 8.
+				if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+					// depth 5
+					// node 17.
+					if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+						// depth 6
+						// node 35.
+						if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+							// depth 7
+							return node35.score1;
+						} else {
+							// depth 7
+							return node35.score2;
+						}
+					} else {
+						// depth 6
+						// node 36.
+						if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+							// depth 7
+							return node36.score1;
+						} else {
+							// depth 7
+							return node36.score2;
+						}
+					}
+
+				} else {
+					// depth 5
+					// node 18.
+					if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+						// depth 6
+						// node 37.
+						if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+							// depth 7
+							return node37.score1;
+						} else {
+							// depth 7
+							return node37.score2;
+						}
+					} else {
+						// depth 6
+						// node 38.
+						if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+							// depth 7
+							return node38.score1;
+						} else {
+							// depth 7
+							return node38.score2;
+						}
+					}
+
+				}
+
+			}
+
+		} else {
+			// depth 3
+			// node 4.
+			if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+				// depth 4
+				// node 9.
+				if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+					// depth 5
+					// node 19.
+					if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+						// depth 6
+						// node 39.
+						if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+							// depth 7
+							return node39.score1;
+						} else {
+							// depth 7
+							return node39.score2;
+						}
+					} else {
+						// depth 6
+						// node 40.
+						if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+							// depth 7
+							return node40.score1;
+						} else {
+							// depth 7
+							return node40.score2;
+						}
+					}
+
+				} else {
+					// depth 5
+					// node 20.
+					if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+						// depth 6
+						// node 41.
+						if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+							// depth 7
+							return node41.score1;
+						} else {
+							// depth 7
+							return node41.score2;
+						}
+					} else {
+						// depth 6
+						// node 42.
+						if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+							// depth 7
+							return node42.score1;
+						} else {
+							// depth 7
+							return node42.score2;
+						}
+					}
+				}
+			} else {
+				// depth 4
+				// node 10.
+				if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+					// depth 5
+					// node 21.
+					if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+						// depth 6
+						// node 43.
+						if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+							// depth 7
+							return node43.score1;
+						} else {
+							// depth 7
+							return node43.score2;
+						}
+					} else {
+						// depth 6
+						// node 44.
+						if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+							// depth 7
+							return node44.score1;
+						} else {
+							// depth 7
+							return node44.score2;
+						}
+					}
+				} else {
+					// depth 5
+					// node 22.
+					if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+						// depth 6
+						// node 45.
+						if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+							// depth 7
+							return node45.score1;
+						} else {
+							// depth 7
+							return node45.score2;
+						}
+					} else {
+						// depth 6
+						// node 46.
+						if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+							// depth 7
+							return node46.score1;
+						} else {
+							// depth 7
+							return node46.score2;
+						}
+					}
+
+				}
+			}
+
+		}
+
+	} else {
+		// depth 2
+		// node 2.
+		if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+			// depth 3
+			// node 5.
+			if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+				// depth 4
+				// node 11.
+				if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+					// depth 5
+					// node 23.
+					if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+						// depth 6
+						// node 47.
+						if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+							// depth 7
+							return node47.score1;
+						} else {
+							// depth 7
+							return node47.score2;
+						}
+					} else {
+						// depth 6
+						// node 48.
+						if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+							// depth 7
+							return node48.score1;
+						} else {
+							// depth 7
+							return node48.score2;
+						}
+					}
+				} else {
+					// depth 5
+					// node 24.
+					if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+						// depth 6
+						// node 49.
+						if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+							// depth 7
+							return node49.score1;
+						} else {
+							// depth 7
+							return node49.score2;
+						}
+					} else {
+						// depth 6
+						// node 50.
+						if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+							// depth 7
+							return node50.score1;
+						} else {
+							// depth 7
+							return node50.score2;
+						}
+					}
+				}
+			} else {
+				// depth 4
+				// node 12.
+				if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+					// depth 5
+					// node 25.
+					if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+						// depth 6
+						// node 51.
+						if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+							// depth 7
+							return node51.score1;
+						} else {
+							// depth 7
+							return node51.score2;
+						}
+					} else {
+						// depth 6
+						// node 52.
+						if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+							// depth 7
+							return node52.score1;
+						} else {
+							// depth 7
+							return node52.score2;
+						}
+					}
+				} else {
+					// depth 5
+					// node 26.
+					if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+						// depth 6
+						// node 53.
+						if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+							// depth 7
+							return node53.score1;
+						} else {
+							// depth 7
+							return node53.score2;
+						}
+					} else {
+						// depth 6
+						// node 54.
+						if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+							// depth 7
+							return node54.score1;
+						} else {
+							// depth 7
+							return node54.score2;
+						}
+					}
+				}
+			}
+		} else {
+			// depth 3
+			// node 6.
+			if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+				// depth 4
+				// node 13.
+				if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+					// depth 5
+					// node 27.
+					if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+						// depth 6
+						// node 55.
+						if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+							// depth 7
+							return node55.score1;
+						} else {
+							// depth 7
+							return node55.score2;
+						}
+					} else {
+						// depth 6
+						// node 56.
+						if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+							// depth 7
+							return node56.score1;
+						} else {
+							// depth 7
+							return node56.score2;
+						}
+					}
+
+				} else {
+					// depth 5
+					// node 28.
+					if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+						// depth 6
+						// node 57.
+						if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+							// depth 7
+							return node57.score1;
+						} else {
+							// depth 7
+							return node57.score2;
+						}
+					} else {
+						// depth 6
+						// node 58.
+						if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+							// depth 7
+							return node58.score1;
+						} else {
+							// depth 7
+							return node58.score2;
+						}
+					}
+				}
+
+			} else {
+				// depth 4
+				// node 14.
+				if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+					// depth 5
+					// node 29.
+					if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+						// depth 6
+						// node 59.
+						if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+							// depth 7
+							return node59.score1;
+						} else {
+							// depth 7
+							return node59.score2;
+						}
+					} else {
+						// depth 6
+						// node 60.
+						if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+							// depth 7
+							return node60.score1;
+						} else {
+							// depth 7
+							return node60.score2;
+						}
+					}
+
+				} else {
+					// depth 5
+					// node 30.
+					if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+						// depth 6
+						// node 61.
+						if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+							// depth 7
+							return node61.score1;
+						} else {
+							// depth 7
+							return node61.score2;
+						}
+					} else {
+						// depth 6
+						// node 62.
+						if (pixels[r1 * ldim + c1] <= pixels[r2 * ldim + c2]) {
+							// depth 7
+							return node62.score1;
+						} else {
+							// depth 7
+							return node62.score2;
+						}
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
