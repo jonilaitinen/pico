@@ -95,6 +95,7 @@ std::vector<FaceTrack> Rotface::detectFaces() {
 			face.y = faceYCoords[rot][i];
 			face.diameter = faceDiameters[rot][i];
 			face.rotation = rotations[rot];
+            face.quality = faceQuality[rot][i];
 			detectedFaces.push_back(face);
 		}
 	}
