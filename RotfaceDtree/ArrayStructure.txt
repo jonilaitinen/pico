@@ -1,0 +1,14 @@
+The pico data array data structure is something like following:
+
+ratio - float
+nstage - int
+repeat nstages: {
+	numtrees - int
+	repeat numtrees {
+		toutdim - int 1
+		tdepth - int 6
+		4 locs for each node - int 4 bytes separetely
+		score of each node - float
+	}
+	threshold - float
+}
