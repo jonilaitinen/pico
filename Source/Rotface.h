@@ -18,13 +18,12 @@ class Rotface {
 public:
 
 	Rotface();
-
-	void precompute_rotluts();
-    void copyFrame(unsigned char* grayFrame, int width, int height);
-	std::vector<FaceTrack> detectFaces();
+    
+    void precompute_rotluts();
+	std::vector<FaceTrack> detectFaces(unsigned char* greyData,
+                                       int frameWidth, int frameHeight);
 
 private:
-
 	static int rrotlut[256][256][NROTS][NUM_SCALES];
 	static int crotlut[256][256][NROTS][NUM_SCALES];
 	// contains number of detections for each rotation
@@ -48,10 +47,6 @@ private:
 	void ccdfs(int a[], int i, float rs[], float cs[], float ss[], float ratio, int n);
 	int find_connected_components(int a[], float rs[], float cs[], float ss[], float ratio, int n);
 	int cluster_detections(float rs[], float cs[], float ss[], float qs[], float ratio, int n, float qcutoff);
-
-    unsigned char* pixels;
-    int frameWidth;
-    int frameHeight;
 
 };
 

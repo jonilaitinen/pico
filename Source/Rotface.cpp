@@ -66,17 +66,12 @@ void Rotface::precompute_rotluts() {
 	}
 
 	//precompute_tables();
-    
-    pixels = (uint8_t*) malloc(640 * 480);
+
 }
 
-void Rotface::copyFrame(unsigned char* grayFrame, int width, int height){
-    frameWidth = width;
-    frameHeight = height;
-    memcpy(pixels, grayFrame, width * height);
-}
 
-std::vector<FaceTrack> Rotface::detectFaces() {
+std::vector<FaceTrack> Rotface::detectFaces(unsigned char* pixels,
+                                            int frameWidth, int frameHeight) {
 
     //LOGD("rows: %i, cols: %i, step: %i \n", frameHeight, frameWidth, frameWidth);
 
